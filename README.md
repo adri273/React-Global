@@ -36,8 +36,7 @@
 }`
 
 Hide Visually
-`
-import {visuallyHidden} from '@styles/helper';
+`import {visuallyHidden} from '@styles/helper';
 
 const wrapper = {
   ...visuallyHidden,
@@ -45,20 +44,16 @@ const wrapper = {
 
 const reviewForm = {
   ...visuallyHidden,
-};
-`
+};`
 Component
-`
-import VisuallyHidden from '@components/VisuallyHidden';
+`import VisuallyHidden from '@components/VisuallyHidden';
 
-const Component = props => <VisuallyHidden>Hide this Visually</VisuallyHidden>
-`
+const Component = props => <VisuallyHidden>Hide this Visually</VisuallyHidden>`
 
 ## react-a11y
 
 ## react-axe
-`
-//showing accessibility errors in the dev console
+`//showing accessibility errors in the dev console
 if(process.env.NODE_ENV !== 'production') {
   import('react-axe').then(axe => {
     axe.(React, ReactDOM, 1000);
@@ -66,8 +61,7 @@ if(process.env.NODE_ENV !== 'production') {
   });
 }else {
   ReactDOM.render(<App />, document.getElementById('root'));
-}
-`
+}`
 ## agnostic-axe
 Hace lo mismo que react-axe pero consume menos. Buscar más info sobre esto...
 
