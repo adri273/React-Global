@@ -4,27 +4,27 @@
  - ``<> </> == <Fragment></Fragment>``
 ## Handle elements
 - Handle Errors:
-`<>
+``<>
 <Input type="text" name="email" aria-describedby="email-errors" />
 <Errors id="email-errors" errors={errors} />
-</>`
-`<div role="alert">
+</>``
+``<div role="alert">
   {props.errors.map((error, index) => (
     <Error {...error} />
   ))}
-</div>`
+</div>``
 
 - Handle disabled:
-`{
+``{
   this.props.disabled && (
     <button type="submit" aria-disabled className="btn-base-primary">
       Submit
     </button>
   );
-}`
+}``
 
 ## Hide content visually accessible to screen readers
-`export const visuallyHidden = {
+``port const visuallyHidden = {
   borderWidth: '0 !important',
   clip: 'rect(1px, 1px, 1px, 1px) !important',
   height: '1px !important',
@@ -33,10 +33,10 @@
   padding: '0 !important',
   position: 'absolute !important',
   whiteSpace: 'nowrap !important',  
-}`
+}``
 
 Hide Visually
-`import {visuallyHidden} from '@styles/helper';
+``port {visuallyHidden} from '@styles/helper';
 
 const wrapper = {
   ...visuallyHidden,
@@ -44,16 +44,16 @@ const wrapper = {
 
 const reviewForm = {
   ...visuallyHidden,
-};`
+};``
 Component
-`import VisuallyHidden from '@components/VisuallyHidden';
+``port VisuallyHidden from '@components/VisuallyHidden';
 
-const Component = props => <VisuallyHidden>Hide this Visually</VisuallyHidden>`
+const Component = props => <VisuallyHidden>Hide this Visually</VisuallyHidden>``
 
 ## react-a11y
 
 ## react-axe
-`//showing accessibility errors in the dev console
+``showing accessibility errors in the dev console
 if(process.env.NODE_ENV !== 'production') {
   import('react-axe').then(axe => {
     axe.(React, ReactDOM, 1000);
@@ -61,7 +61,7 @@ if(process.env.NODE_ENV !== 'production') {
   });
 }else {
   ReactDOM.render(<App />, document.getElementById('root'));
-}`
+}``
 ## agnostic-axe
 Hace lo mismo que react-axe pero consume menos. Buscar más info sobre esto...
 
