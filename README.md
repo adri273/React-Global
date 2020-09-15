@@ -4,15 +4,15 @@
  - ``<> </> == <Fragment></Fragment>``
 ## Handle elements
 - Handle Errors:
-``<>
+```<>
 <Input type="text" name="email" aria-describedby="email-errors" />
 <Errors id="email-errors" errors={errors} />
-</>``
-``<div role="alert">
+</>```
+```<div role="alert">
   {props.errors.map((error, index) => (
     <Error {...error} />
   ))}
-</div>``
+</div>```
 
 - Handle disabled:
 ``{
