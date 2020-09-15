@@ -1,7 +1,7 @@
 # React-Global
 
 ## HTML elements
- - <> </> == <Fragment></Fragment>
+ - ``<> </> == <Fragment></Fragment>``
 ## Handle elements
 - Handle Errors:
 `<>
